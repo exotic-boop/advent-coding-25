@@ -1,13 +1,13 @@
 def find_largest_joltage():
     answer = 0
 
-    #First puzzle
-    #with open('input.txt', 'r') as file:
+    # First puzzle
+    # with open('input.txt', 'r') as file:
     #    for line in file:
     #        print(max(int(line[i] + line[j]) for i in range(len(line)) for j in range(i+1, len(line))))
     #       answer += max(int(line[i] + line[j]) for i in range(len(line)) for j in range(i+1, len(line)))
     
-    #seconed puzzle
+    # second puzzle
     with open('input.txt', 'r') as file:
         for line in file:
             line = line.strip()
@@ -30,7 +30,7 @@ def find_largest_joltage():
                 start = max_index + 1
 
             answer += int(battery)
-            
+
     print(answer)
 
 
